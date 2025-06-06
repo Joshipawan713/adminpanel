@@ -3,16 +3,12 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<meta name="description" content="Responsive Bootstrap Dashboards">
-		<meta name="author" content="Bootstrap Gallery">
 		<link rel="shortcut icon" href="img/favicon.svg" />
 		<title>Index - Admin</title>
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="fonts/style.css">
 		<link rel="stylesheet" href="css/main.min.css">
-
 	</head>
-
 	<body>
 
 		<?php include('includes/topheader.php'); ?>
@@ -38,7 +34,7 @@
 						<div class="col-lg-2 col-sm-4 col-12">
 							<div class="hospital-tiles">
 								<img src="img/hospital/patient.svg" alt="Best Dashboards" />
-								<p>New Patients</p>
+								<p>Total Users</p>
 								<h2>60</h2>
 							</div>
 						</div>
@@ -52,14 +48,14 @@
 						<div class="col-lg-2 col-sm-4 col-12">
 							<div class="hospital-tiles">
 								<img src="img/hospital/doctor.svg" alt="Top Dashboards" />
-								<p>Doctors</p>
+								<p>Total Drivers</p>
 								<h2>75</h2>
 							</div>
 						</div>
 						<div class="col-lg-2 col-sm-4 col-12">
 							<div class="hospital-tiles">
 								<img src="img/hospital/staff.svg" alt="Top Dashboards" />
-								<p>Staff</p>
+								<p>Total Employees</p>
 								<h2>253</h2>
 							</div>
 						</div>
@@ -75,7 +71,7 @@
 						<div class="col-lg-6 col-sm-12 col-12">
 							<div class="card">
 								<div class="card-header">
-									<div class="card-title">Patients</div>
+									<div class="card-title">Drivers</div>
 								</div>
 								<div class="card-body">
 									<div id="hospital-line-column-graph"></div>
@@ -85,31 +81,7 @@
 						<div class="col-lg-6 col-sm-12 col-12">
 							<div class="card">
 								<div class="card-header">
-									<div class="card-title">Treatment Type</div>
-								</div>
-								<div class="card-body">
-									<div id="hospital-line-area-graph"></div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="row gutters">
-						<div class="col-sm-12 col-12">
-							<div class="card">
-								<div class="card-header">
-									<div class="card-title">Patients by Age</div>
-								</div>
-								<div class="card-body">
-									<div id="hospital-patients-by-age"></div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="row gutters">
-						<div class="col-lg-4 col-sm-12 col-12">
-							<div class="card">
-								<div class="card-header">
-									<div class="card-title">Top Doctors</div>
+									<div class="card-title">Top Drivers</div>
 								</div>
 								<div class="card-body">
 									<div class="top-doctors-container">
@@ -161,97 +133,19 @@
 												</div>
 											</div>
 										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-sm-12 col-12">
-							<div class="card">
-								<div class="card-header">
-									<div class="card-title">Messages</div>
-								</div>
-								<div class="card-body">
-									<ul class="custom-messages">
-										<li class="clearfix">
-											<div class="customer">TB</div>
-											<div class="delivery-details">
-												<span class="badge">Appointment</span>
-												<h5>Tom Bartholet</h5>
-												<p>Your appointment with Dr. Kelly is confirmed at 04:30 PM and your reference ID is
-													<b>TK556753</b>.
-												</p>
-											</div>
-										</li>
-										<li class="clearfix">
-											<div class="customer secondary">DC</div>
-											<div class="delivery-details">
-												<span class="badge">Cancelled</span>
-												<h5>Dale Colorado</h5>
-												<p>We are pleased to inform that the following ticket no.<b>TK217887</b> have been cancelled.
-												</p>
-											</div>
-										</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-sm-12 col-12">
-							<div class="card">
-								<div class="card-header">
-									<div class="card-title">Overall Ratings</div>
-								</div>
-								<div class="card-body">
-									<div class="hospital-ratings">
-										<div class="total-ratings">
-											<h2>4.5</h2>
-											<div class="rating-stars">
-												<div id="rate1"></div>
-											</div>
-										</div>
-										<div class="ratings-list-container">
-											<div class="ratings-list">
-												<div class="rating-level">5.0</div>
-												<div class="rating-stars">
-													<div class="rateA"></div>
-												</div>
-												<div class="total">
-													8,500 <span class="percentage">65%</span>
-												</div>
-											</div>
-											<div class="ratings-list">
-												<div class="rating-level">4.0</div>
-												<div class="rating-stars">
-													<div class="rateB"></div>
-												</div>
-												<div class="total">
-													3,500 <span class="percentage">20%</span>
-												</div>
-											</div>
-											<div class="ratings-list">
-												<div class="rating-level">3.0</div>
-												<div class="rating-stars">
-													<div class="rateC"></div>
-												</div>
-												<div class="total">
-													1,400 <span class="percentage">15%</span>
-												</div>
-											</div>
-											<div class="ratings-list">
-												<div class="rating-level">2.0</div>
-												<div class="rating-stars">
-													<div class="rateD"></div>
-												</div>
-												<div class="total">
-													300 <span class="percentage">05%</span>
-												</div>
-											</div>
-											<div class="ratings-list">
-												<div class="rating-level">1.0</div>
-												<div class="rating-stars">
-													<div class="rateE"></div>
-												</div>
-												<div class="total">
-													75 <span class="percentage">03%</span>
+										<div class="top-doctor">
+											<img src="img/user14.png" class="avatar" alt="Best Admin Dashboard">
+											<div class="doctor-details">
+												<h6>Dr. Emma George</h6>
+												<div class="doctor-score">
+													<div class="progress">
+														<div class="progress-bar bg-pink" role="progressbar" style="width: 42%" aria-valuenow="42"
+															aria-valuemin="0" aria-valuemax="100"></div>
+													</div>
+													<div class="points">
+														<div class="left">Rank #3</div>
+														<div class="right">4,200 Ratings</div>
+													</div>
 												</div>
 											</div>
 										</div>
@@ -262,7 +156,7 @@
 					</div>
 				</div>
 			</div>
-			<footer class="main-footer">© Bootstrap Gallery 2023</footer>
+			<?php include('includes/footer.php'); ?>
 		</div>
 		<script src="js/jquery.min.js"></script>
 		<script src="js/bootstrap.bundle.min.js"></script>

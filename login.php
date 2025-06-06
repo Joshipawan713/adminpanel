@@ -1,26 +1,26 @@
 <?php 
-session_start();
+// session_start();
 
-require_once 'AuthinectionAdmin.php';
+// require_once 'AuthinectionAdmin.php';
 
-$crud = new AuthAdmin();
+// $crud = new AuthAdmin();
 
-if (isset($_POST['submit'])) {
-$email = $_POST['email'];
-$password = $_POST['password'];
-$result = $crud->LoginAdmin($email, $password);
+// if (isset($_POST['submit'])) {
+// $email = $_POST['email'];
+// $password = $_POST['password'];
+// $result = $crud->LoginAdmin($email, $password);
 
-if (is_array($result)) {
-$_SESSION['admin_user_id'] = $result['id'];
-$_SESSION['admin_user_name'] = $result['name'];
-$_SESSION['admin_user_email'] = $result['email'];
+// if (is_array($result)) {
+// $_SESSION['admin_user_id'] = $result['id'];
+// $_SESSION['admin_user_name'] = $result['name'];
+// $_SESSION['admin_user_email'] = $result['email'];
 
-header("location:index.php");
-exit();
+// header("location:index.php");
+// exit();
 
-}
+// }
 
-}
+// }
 
 ?>
 
@@ -29,8 +29,6 @@ exit();
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<meta name="description" content="Responsive Bootstrap Dashboards">
-		<meta name="author" content="Bootstrap Gallery">
 		<link rel="shortcut icon" href="img/favicon.svg" />
 		<title>Login - Admin</title>
 		<link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -38,7 +36,7 @@ exit();
 	</head>
 	<body class="authentication">
 		<div class="container">
-			<form method="POST">
+			<form method="POST" action="index.php">
 				<div class="row justify-content-md-center">
 					<div class="col-xl-4 col-lg-5 col-md-6 col-sm-12">
 						<div class="login-screen">
